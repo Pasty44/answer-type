@@ -31,6 +31,22 @@ answerType.getAnswerType('Who was king of France in the late 17th century?');
 // => { type: 'person', prob: 0.9904253513937077 }
 ```
 
+### Supported answer types
+The default answer type classifier this module comes with supports 13 answer types:
+1. person
+2. location
+3. organization
+4. timepoint
+5. duration
+6. money
+7. percentage
+8. amount
+9. distance
+11. description
+11. title
+12. definition
+13. other
+
 ---
 
 ## Using custom training data
