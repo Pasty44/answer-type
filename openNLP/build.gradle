@@ -1,0 +1,29 @@
+apply plugin: 'java'
+archivesBaseName = 'OpenNLPAnswerTypeClassifier'
+version = '1.0.0'
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+	manifest {
+    attributes 'Specification-Title': 'Answer type classification using OpenNLP',
+               'Specification-Vendor': 'Andrew Dinihan'
+    }
+    baseName = 'OpenNLPAnswerTypeClassifier'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+dependencies {
+  compile fileTree(dir: 'resources', include: '*.jar')
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked"
+}

@@ -1,0 +1,13 @@
+P-person
+L-location
+O-organization
+T-timepoint
+R-duration
+M-money
+C-percentage
+A-amount
+D-distance
+F-description
+W-title
+B-definition
+X-other
