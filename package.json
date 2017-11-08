@@ -1,6 +1,10 @@
 {
   "name": "answer-type",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pasty44/answer-type"
+  },
   "description": "Answer type recognition",
   "main": "index.js",
   "scripts": {
