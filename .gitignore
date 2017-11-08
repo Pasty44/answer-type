@@ -1,4 +1,6 @@
-openNLP/build
+openNLP/build/classes
+openNLP/build/dependency-cache
+openNLP/build/tmp
 openNLP/.gradle
 node_modules
 npm-debug.log
