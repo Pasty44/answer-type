@@ -1,3 +1,4 @@
 openNLP/build
 openNLP/.gradle
 node_modules
+npm-debug.log
