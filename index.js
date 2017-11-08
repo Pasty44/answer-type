@@ -13,12 +13,12 @@
  * Defaults
  */
 
-var TRAINING_QUESTIONS = 'openNLP/resources/train/training-questions.txt';
-var ANSWER_TYPE_MAP = 'openNLP/resources/train/answer-type-map.txt';
-var OPENNLP_ANSWER_TYPE_CLASSIFICATION_JAR = 'openNLP/build/libs/OpenNLPAnswerTypeClassifier-1.0.0.jar';
+var TRAINING_QUESTIONS = __dirname + '/openNLP/resources/train/training-questions.txt';
+var ANSWER_TYPE_MAP = __dirname + '/openNLP/resources/train/answer-type-map.txt';
+var OPENNLP_ANSWER_TYPE_CLASSIFICATION_JAR = __dirname + '/openNLP/build/libs/OpenNLPAnswerTypeClassifier-1.0.0.jar';
 var ANSWER_TYPE_CLASSIFICATION_CLASS = 'pasty.nlp.answertypeclassifier.AnswerTypeClassifier';
-var BIN_MODELS_FOLDER = 'openNLP/resources/models/';
-var WORDNET_DICTIONARY = 'openNLP/resources/WordNet-3.0/dict/';
+var BIN_MODELS_FOLDER = __dirname + '/openNLP/resources/models/';
+var WORDNET_DICTIONARY = __dirname + '/openNLP/resources/WordNet-3.0/dict/';
 
 /**
  * Dependencies
